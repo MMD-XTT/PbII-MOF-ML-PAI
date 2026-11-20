@@ -24,7 +24,7 @@ PbII-MOF-ML-CKR/
 | Task | Response | Selected algorithm | Archived training rows | OOF R2 |
 | --- | --- | --- | ---: | ---: |
 | C | Adsorption capacity, csv_qe (mg/g) | CatBoost | 3060 | 0.894178 |
-| K | Uptake at contact time, csv_qt (mg/g) | XGBoost | 2579 | 0.888994 |
+| K | Uptake at contact time, csv_qt (mg/g) | XGBoost | 2645 | 0.888994 |
 | R | Retention, csv_retention_percent (%) | CatBoost | 2013 | 0.956889 |
 
 C, K, and R represent adsorption capacity, uptake at a specified contact time, and adsorption-capacity retention, respectively. An evidence-based water-stability score (W) complements these measures in the performance assessment index (PAI).
@@ -70,7 +70,7 @@ python scripts/create_kr_categorical_shap.py --chart all
 - model/*/*/: trained models, hyperparameters, performance metrics, fold results, out-of-fold predictions, and optimization records.
 - model_registry.csv: all 18 archived runs and their training-source populations.
 
-The selected K model uses a 2579-row training matrix. The unified K workbook contains 2645 labeled rows and is the default input for new training and interpretation. Model-specific training matrices are available in `data/training/`.
+The selected K model uses a 2645-row training matrix. The unified K workbook contains 2645 labeled rows and is the default input for new training and interpretation. Model-specific training matrices are available in `data/training/`.
 
 ## Screening
 
